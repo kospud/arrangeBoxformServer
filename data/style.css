@@ -1,0 +1,111 @@
+.arrangeBoxContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrangeBox {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(210, 234, 255);
+    padding: 10px;
+    border-radius: 10px;
+    width: 90%;
+    margin: 5px;
+}
+
+.arrangeBoxLists {
+    display: flex;
+    width: 100%;
+}
+
+.arrangeBoxList {
+    background-color: white;
+    width: 48%;
+    height: 200px;
+    border: 1px rgb(216, 216, 216) solid;
+    border-radius: 10px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+
+}
+
+.arrangeBoxlistItem {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 1%;
+}
+
+.arrangeBoxlistItem:hover {
+
+    background-color: rgb(235, 235, 235);
+}
+
+.functionalBar {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.arrangeBoxSort {
+    border: 1px rgb(216, 216, 216) solid;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.arrangeBoxSearch {
+    border: 1px rgb(216, 216, 216) solid;
+    border-radius: 5px;
+    width: 70%;
+}
+
+.selected {
+    background-color: rgb(99, 180, 255);
+    color: white;
+}
+
+.selected:hover {
+    background-color: rgb(73, 163, 248);
+}
+
+.deleteItem {
+    color: red;
+    cursor: default;
+}
+
+.deleteItem :hover {
+    opacity: 0.5;
+}
+
+.arrangeBoxSelectButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 3%;
+    width: 4%;
+}
+
+.arrangeBoxButton {
+    background-color: rgb(103, 126, 255);
+    font-weight: bold;
+    color: white;
+    border: none;
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 10px;
+}
+
+.arrangeBoxButton:hover {
+    background-color: rgb(70, 70, 245);
+
+}
+
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
