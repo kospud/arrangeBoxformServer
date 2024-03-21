@@ -23,8 +23,8 @@ submitBtn.addEventListener('click', () => {
             if (response.ok)
                 alert("Товары добавлены в корзину")
         })
-        .catch((err) => {
-            alert(err.messege)
+        .catch((error) => {
+            alert(error)
         })
 
 });
@@ -42,7 +42,9 @@ submitBtn.addEventListener('click', () => {
 
                 const clothes = data.clothes.map(element => { return { ...element, selected: false } })
                 arrangeBoxOne.setPossibleValues(clothes)
-
-
+            })
+            .catch(error=>
+            {
+                alert(error)
             })
     })()
